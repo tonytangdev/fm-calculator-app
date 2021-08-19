@@ -1,0 +1,12 @@
+.main {
+    display: grid;
+    grid-template: 20vh 1fr / 1fr;
+    height: 100vh;
+}
+
+.logoContainer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* height: 20vh; */
+}
