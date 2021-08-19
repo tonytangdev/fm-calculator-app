@@ -1,0 +1,19 @@
+.button {
+    border: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    border-radius: var(--btn-border-radius);
+    font-weight: 700;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+.secondaryButton {
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+}
+
+.primaryButton {
+    background-color: var(--primary);
+    color: var(--very-dark-cyan);
+}

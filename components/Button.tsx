@@ -1,4 +1,5 @@
-import React, { MouseEventHandler } from 'react'
+import { MouseEventHandler } from 'react'
+import styles from '../styles/Button.module.css'
 
 interface Props {
     isSecondary?: boolean,
@@ -12,6 +13,6 @@ export const Button = ({
     text
 }: Props) => {
     return (
-        <button onClick={onClick}>{text}</button>
+        <button onClick={onClick} className={`${styles.button} ${isSecondary ? styles.secondaryButton : styles.primaryButton}`}>{text}</button>
     )
 }

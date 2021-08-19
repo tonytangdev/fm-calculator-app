@@ -1,8 +1,8 @@
 .label {
     display: block;
-    color: var(--primary);
-    font-weight: 700;
-    font-size: 1rem;
+    color: var(--dark-grayish-cyan-2);
+    font-weight: var(--label-font-weight);
+    font-size: var(--label-font-size);
     margin-bottom: 0.5rem;
 }
 
@@ -11,20 +11,24 @@
     background-color: transparent;
     outline: none;
     text-align: end;
-    font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    color: var(--dark-greyish-cyan);
-    font-weight: 700;
+    font-family: inherit;
+    color: var(--very-dark-cyan);
+    font-weight: var(--input-font-weight);
     font-size: 1.4rem;
+    width: 100%;
+}
+
+.input::placeholder {
+    color: var(--very-dark-cyan);
 }
 
 .customInput {
     display: grid;
     grid-template: 1fr / 0.7rem 1fr;
     width: 100%;
-    padding: 0.6rem 0.8rem;
+    padding: 0.3rem 0.8rem;
     background-color: var(--light-grayish-cyan-2);
-    border-radius: 0.3rem;
+    border-radius: var(--btn-border-radius);
 }
 
 .iconContainer {

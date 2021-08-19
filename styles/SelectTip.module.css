@@ -1,0 +1,14 @@
+.label {
+    font-size: var(--label-font-size);
+    color: var(--dark-grayish-cyan-2);
+    font-weight: var(--label-font-weight);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.buttonsContainer {
+    display: grid;
+    grid-template: repeat(3, 3rem) / repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
