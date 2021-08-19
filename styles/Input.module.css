@@ -1,0 +1,32 @@
+.label {
+    display: block;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    text-align: end;
+    font-family: 'Space Mono', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: var(--dark-greyish-cyan);
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.customInput {
+    display: grid;
+    grid-template: 1fr / 0.7rem 1fr;
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    background-color: var(--light-grayish-cyan-2);
+    border-radius: 0.3rem;
+}
+
+.iconContainer {
+    display: flex;
+}

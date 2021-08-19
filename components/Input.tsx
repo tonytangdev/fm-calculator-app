@@ -1,3 +1,5 @@
+import styles from "../styles/Input.module.css"
+
 interface Props {
     title?: string
     icon?: React.ReactNode
@@ -15,12 +17,12 @@ export const Input = ({
 }: Props) => {
     const inputId = `${title}-id`
     return (
-        <div>
-            <label htmlFor={inputId}>{title}</label>
-            <div>
-                {icon}
-                <input placeholder={placeholder} type="number" name={inputId} id={inputId} value={value} onChange={onChange} />
+        <>
+            <label htmlFor={inputId} className={styles.label}>{title}</label>
+            <div className={styles.customInput}>
+                <div className={styles.iconContainer}>{icon}</div>
+                <input placeholder={placeholder} type="number" name={inputId} id={inputId} value={value} onChange={onChange} className={styles.input} />
             </div>
-        </div>
+        </>
     )
 }
