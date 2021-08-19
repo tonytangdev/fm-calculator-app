@@ -10,7 +10,7 @@ interface Props {
 export const PeopleInput = (props: Props) => {
     return (
         <div>
-            <Input icon={<Image src={PersonImage} alt="person sign" />} title="Number of People" value="5" />
+            <Input icon={<Image src={PersonImage} alt="person sign" />} title="Number of People" value="5" onChange={e => console.log(e)} />
         </div>
     )
 }

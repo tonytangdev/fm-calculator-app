@@ -10,7 +10,7 @@ interface Props {
 export const BillInput = (props: Props) => {
     return (
         <div>
-            <Input icon={<Image src={DollarImage} alt="dollar sign" />} title="Bill" value="142.55" />
+            <Input icon={<Image src={DollarImage} alt="dollar sign" />} title="Bill" value="142.55" onChange={e => console.log(e)} />
         </div>
     )
 }
