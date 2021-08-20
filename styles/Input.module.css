@@ -21,7 +21,7 @@
 .input::placeholder {
     color: var(--very-dark-cyan);
     font-size: 1.2rem;
-    text-align: center;
+    text-align: end;
 }
 
 .customInput {
