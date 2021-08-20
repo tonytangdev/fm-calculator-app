@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/nextjs-and-css-grid-FTQf89IWW)
-- Live Site URL: [Add live site URL here](https://fm-calculator-app-i3chmjzyb-tonytangdev.vercel.app/)
+- Solution URL: [https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/nextjs-and-css-grid-FTQf89IWW](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX/hub/nextjs-and-css-grid-FTQf89IWW)
+- Live Site URL: [https://fm-calculator-app-i3chmjzyb-tonytangdev.vercel.app/](https://fm-calculator-app-i3chmjzyb-tonytangdev.vercel.app/)
 
 ## My process
 
