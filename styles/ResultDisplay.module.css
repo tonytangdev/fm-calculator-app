@@ -6,3 +6,18 @@
     grid-template: repeat(3, 1fr) / 1fr;
     row-gap: 1.5rem;
 }
+
+.buttonContainer {
+    display: flex;
+}
+
+@media (min-width: 376px) {
+    .container {
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+
+    .buttonContainer {
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+}
