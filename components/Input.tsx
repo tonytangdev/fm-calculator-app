@@ -4,9 +4,9 @@ import styles from "../styles/Input.module.css"
 interface Props {
     title?: string
     icon?: React.ReactNode
-    value?: string,
-    placeholder?: string,
-    onChange: React.ChangeEventHandler<HTMLInputElement>
+    value?: string
+    placeholder?: string
+    onChange: (e: number) => void
 }
 
 export const Input = ({
@@ -25,7 +25,7 @@ export const Input = ({
     const onBlur = () => setIsFocused(false)
     const onChangeValue: React.ChangeEventHandler<HTMLInputElement> = e => {
         setIsIdle(false)
-        onChange(e)
+        onChange(parseFloat(e.currentTarget.value))
     }
 
     const valueIsInvalid = !isIdle && parseFloat((value as string)) <= 0

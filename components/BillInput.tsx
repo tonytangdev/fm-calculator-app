@@ -14,7 +14,7 @@ export const BillInput = ({
 }: Props) => {
     return (
         <div>
-            <Input icon={<Image src={DollarImage} alt="dollar sign" />} title="Bill" value={`${value}`} onChange={e => onChange(parseFloat(e.currentTarget.value))} />
+            <Input icon={<Image src={DollarImage} alt="dollar sign" />} title="Bill" value={`${value}`} onChange={e => onChange(e)} />
         </div>
     )
 }

@@ -4,15 +4,17 @@ import { Input } from './Input'
 import PersonImage from '../public/icon-person.svg'
 
 interface Props {
-    value: number
+    value: number,
+    onChange: (e: number) => void
 }
 
 export const PeopleInput = ({
-    value
+    value,
+    onChange
 }: Props) => {
     return (
         <div>
-            <Input icon={<Image src={PersonImage} alt="person sign" />} title="Number of People" value={`${value}`} onChange={e => console.log(e)} />
+            <Input icon={<Image src={PersonImage} alt="person sign" />} title="Number of People" value={`${value}`} onChange={e => onChange(e)} />
         </div>
     )
 }

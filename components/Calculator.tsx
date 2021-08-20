@@ -14,6 +14,7 @@ export const Calculator = (props: Props) => {
     const [total, setTotal] = useState(0)
 
     const onBillChange: (value: number) => void = value => setBill(value)
+    const onNumberOfPeopleChange: (value: number) => void = value => setNumberOfPeople(value)
 
     return (
         <div className={styles.container}>
@@ -21,6 +22,7 @@ export const Calculator = (props: Props) => {
                 bill={bill}
                 numberOfPeople={numberOfPeople}
                 onBillChange={onBillChange}
+                onNumberOfPeopleChange={onNumberOfPeopleChange}
             ></InteractiveSection>
             <ResultDisplay></ResultDisplay>
         </div>

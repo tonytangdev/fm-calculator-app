@@ -7,13 +7,15 @@ import styles from '../styles/InteractiveSection.module.css'
 interface Props {
     bill: number,
     numberOfPeople: number,
-    onBillChange: (e: number) => void
+    onBillChange: (e: number) => void,
+    onNumberOfPeopleChange: (value: number) => void
 }
 
 export const InteractiveSection = ({
     bill,
     numberOfPeople,
-    onBillChange
+    onBillChange,
+    onNumberOfPeopleChange
 }: Props) => {
     return (
         <div>
@@ -22,7 +24,7 @@ export const InteractiveSection = ({
             </div>
             <SelectTip></SelectTip>
             <div className={styles.inputContainer}>
-                <PeopleInput value={numberOfPeople}></PeopleInput>
+                <PeopleInput value={numberOfPeople} onChange={onNumberOfPeopleChange}></PeopleInput>
             </div>
         </div>
     )
