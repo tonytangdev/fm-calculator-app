@@ -14,7 +14,6 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-
       <main className={styles.main}>
         <div className={styles.logoContainer}>
           <Image src={LogoSVG} alt="logo"></Image>
