@@ -4,15 +4,17 @@ import styles from '../styles/Button.module.css'
 interface Props {
     isSecondary?: boolean,
     onClick: MouseEventHandler<HTMLButtonElement>,
-    text: string
+    text: string,
+    isDisabled?: boolean
 }
 
 export const Button = ({
     isSecondary,
     onClick,
-    text
+    text,
+    isDisabled
 }: Props) => {
     return (
-        <button onClick={onClick} className={`${styles.button} ${isSecondary ? styles.secondaryButton : styles.primaryButton}`}>{text}</button>
+        <button onClick={onClick} className={`${styles.button} ${isSecondary ? styles.secondaryButton : styles.primaryButton}`} disabled={isDisabled}>{text}</button>
     )
 }
