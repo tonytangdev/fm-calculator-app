@@ -14,12 +14,14 @@ export const ResultDisplay = ({
     total,
     onResetClick
 }: Props) => {
+    const resetButtonIsDisabled = tipAmount <= 0
+
     return (
         <div className={styles.container}>
             <AmountDisplay price={tipAmount} title="Tip Amount" subTitle="person"></AmountDisplay>
             <AmountDisplay price={total} title="Total" subTitle="person"></AmountDisplay>
             <div className={styles.buttonContainer}>
-                <Button onClick={onResetClick} text="RESET"></Button>
+                <Button onClick={onResetClick} text="RESET" isDisabled={resetButtonIsDisabled}></Button>
             </div>
         </div>
     )

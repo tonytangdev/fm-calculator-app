@@ -31,10 +31,10 @@ export const Calculator = (props: Props) => {
     useEffect(() => {
         if (bill > 0 && numberOfPeople > 0 && tipPercentage > 0) {
             const computedTip = bill * (tipPercentage / 100)
-            setTipAmount(computedTip)
+            setTipAmount(+computedTip.toFixed(2))
 
             const totalPerPerson = computedTip / numberOfPeople
-            setTotal(totalPerPerson)
+            setTotal(+totalPerPerson.toFixed(2))
         }
     }, [bill, numberOfPeople, tipPercentage])
 
