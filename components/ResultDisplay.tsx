@@ -4,16 +4,22 @@ import { Button } from './Button'
 import styles from '../styles/ResultDisplay.module.css'
 
 interface Props {
-
+    total: number
+    tipAmount: number
+    onResetClick: () => void
 }
 
-export const ResultDisplay = (props: Props) => {
+export const ResultDisplay = ({
+    tipAmount,
+    total,
+    onResetClick
+}: Props) => {
     return (
         <div className={styles.container}>
-            <AmountDisplay price={4.27} title="Tip Amount" subTitle="person"></AmountDisplay>
-            <AmountDisplay price={32.79} title="Total" subTitle="person"></AmountDisplay>
+            <AmountDisplay price={tipAmount} title="Tip Amount" subTitle="person"></AmountDisplay>
+            <AmountDisplay price={total} title="Total" subTitle="person"></AmountDisplay>
             <div className={styles.buttonContainer}>
-                <Button onClick={e => console.log(e)} text="RESET"></Button>
+                <Button onClick={onResetClick} text="RESET"></Button>
             </div>
         </div>
     )
