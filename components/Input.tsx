@@ -37,7 +37,7 @@ export const Input = ({
             {!!title && (
                 <div className={styles.headerContainer}>
                     <label htmlFor={inputId} className={styles.label}>{title}</label>
-                    {valueIsInvalid && (<span className={styles.errorText}>Can't be zero</span>)}
+                    {valueIsInvalid && (<span className={styles.errorText}>Can&apos;t be zero</span>)}
                 </div>
             )}
             <div className={`${styles.customInput} ${!icon && styles.noIconInput} ${!!isFocused && styles.inputIsFocused} ${valueIsInvalid && styles.inputError}`}>
