@@ -35,6 +35,21 @@
     border: 2px var(--primary) solid;
 }
 
+.inputError {
+    border: 2px red solid;
+}
+
 .iconContainer {
     display: flex;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.errorText {
+    color: red;
+    font-size: 0.8rem;
+    font-weight: 700;
 }

@@ -20,13 +20,20 @@ export const Input = ({
 
     const [isFocused, setIsFocused] = useState(false)
 
-    const onFocus = () => setIsFocused(value => true)
-    const onBlur = () => setIsFocused(value => false)
+    const onFocus = () => setIsFocused(true)
+    const onBlur = () => setIsFocused(false)
+
+    const valueIsInvalid = parseFloat((value as string)) <= 0
 
     return (
         <>
-            {!!title && (<label htmlFor={inputId} className={styles.label}>{title}</label>)}
-            <div className={`${styles.customInput} ${!!isFocused && styles.inputIsFocused}`}>
+            {!!title && (
+                <div className={styles.headerContainer}>
+                    <label htmlFor={inputId} className={styles.label}>{title}</label>
+                    {valueIsInvalid && (<span className={styles.errorText}>Can't be zero</span>)}
+                </div>
+            )}
+            <div className={`${styles.customInput} ${!!isFocused && styles.inputIsFocused} ${valueIsInvalid && styles.inputError}`}>
                 <div className={styles.iconContainer}>{icon}</div>
                 <input placeholder={placeholder} type="number" name={inputId} id={inputId} value={value} onChange={onChange} className={styles.input} onFocus={onFocus} onBlur={onBlur} />
             </div>
