@@ -32,11 +32,11 @@
 }
 
 .inputIsFocused {
-    border: 2px var(--primary) solid;
+    outline: 2px var(--primary) solid;
 }
 
 .inputError {
-    border: 2px red solid;
+    outline: 2px red solid;
 }
 
 .iconContainer {
