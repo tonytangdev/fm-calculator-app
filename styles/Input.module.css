@@ -20,6 +20,8 @@
 
 .input::placeholder {
     color: var(--very-dark-cyan);
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .customInput {
@@ -52,4 +54,8 @@
     color: red;
     font-size: 0.8rem;
     font-weight: 700;
+}
+
+.noIconInput {
+    display: inline-block;
 }
