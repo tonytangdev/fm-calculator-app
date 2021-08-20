@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+.button:active {
+    background-color: var(--light-grayish-cyan);
+    color: var(--very-dark-cyan);
+}
+
 .secondaryButton {
     background-color: var(--very-dark-cyan);
     color: var(--white);
