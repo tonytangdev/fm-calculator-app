@@ -2,5 +2,23 @@
     background-color: var(--white);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    padding: 1.6rem
+    padding: 1.6rem;
+    display: grid;
+    grid-template: repeat(2, auto) / auto;
+}
+
+@media (min-width: 376px) {
+    .container {
+        padding: 2rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        grid-template:  auto / repeat(2, 1fr);
+        column-gap: 2rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    
 }
