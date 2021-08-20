@@ -4,13 +4,17 @@ import { Input } from './Input'
 import DollarImage from '../public/icon-dollar.svg'
 
 interface Props {
-
+    value: number,
+    onChange: (e: number) => void
 }
 
-export const BillInput = (props: Props) => {
+export const BillInput = ({
+    value,
+    onChange
+}: Props) => {
     return (
         <div>
-            <Input icon={<Image src={DollarImage} alt="dollar sign" />} title="Bill" value="0" onChange={e => console.log(e)} />
+            <Input icon={<Image src={DollarImage} alt="dollar sign" />} title="Bill" value={`${value}`} onChange={e => onChange(parseFloat(e.currentTarget.value))} />
         </div>
     )
 }
