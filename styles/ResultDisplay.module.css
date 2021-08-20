@@ -1,7 +1,7 @@
 .container {
     background-color: var(--very-dark-cyan);
     border-radius: var(--result-border-radius);
-    padding: 1.8rem 1rem;
+    padding: 1.5rem;
     display: grid;
     grid-template: repeat(3, 1fr) / 1fr;
     row-gap: 1.5rem;
