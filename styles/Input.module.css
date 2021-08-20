@@ -31,6 +31,10 @@
     border-radius: var(--btn-border-radius);
 }
 
+.inputIsFocused {
+    border: 2px var(--primary) solid;
+}
+
 .iconContainer {
     display: flex;
 }
