@@ -6,7 +6,8 @@ interface Props {
     icon?: React.ReactNode
     value?: string
     placeholder?: string
-    onChange: (e: number) => void
+    onChange: (e: number) => void,
+    max?: number
 }
 
 export const Input = ({
@@ -14,7 +15,8 @@ export const Input = ({
     icon,
     value,
     placeholder,
-    onChange
+    onChange,
+    max
 }: Props) => {
     const inputId = `${title}-id`
 
@@ -40,7 +42,7 @@ export const Input = ({
             )}
             <div className={`${styles.customInput} ${!icon && styles.noIconInput} ${!!isFocused && styles.inputIsFocused} ${valueIsInvalid && styles.inputError}`}>
                 <div className={styles.iconContainer}>{icon}</div>
-                <input min="0" placeholder={placeholder} type="number" name={inputId} id={inputId} value={value} onChange={onChangeValue} className={styles.input} onFocus={onFocus} onBlur={onBlur} />
+                <input min="0" max={max} placeholder={placeholder} type="number" name={inputId} id={inputId} value={value} onChange={onChangeValue} className={styles.input} onFocus={onFocus} onBlur={onBlur} />
             </div>
         </>
     )

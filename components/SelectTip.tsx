@@ -17,7 +17,7 @@ export const SelectTip = (props: Props) => {
                 <Button text="15%" onClick={e => console.log(e)}></Button>
                 <Button text="25%" onClick={e => console.log(e)} isSecondary></Button>
                 <Button text="50%" onClick={e => console.log(e)} isSecondary></Button>
-                <Input placeholder="Custom" onChange={e => console.log(e)
+                <Input max={100} placeholder="Custom" onChange={e => console.log(e)
                 }></Input>
             </div>
         </div>
