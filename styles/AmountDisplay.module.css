@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    align-items: center;
+}
+
+.titleContainer {
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+    align-items: flex-start;
+}
+
+.title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+.subTitle {
+    color: var(--dark-grayish-cyan-2);
+    font-size: 0.7rem;
+
+}
+
+.price {
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 700;
+    justify-self: flex-end;
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import styles from '../styles/AmountDisplay.module.css'
 
 interface Props {
     title: string,
@@ -12,12 +12,14 @@ export const AmountDisplay = ({
     price
 }: Props) => {
     return (
-        <div>
-            <div>
-                <span>{title}</span>
-                <span>/ {subTitle}</span>
+        <div className={styles.container}>
+            <div className={styles.titleContainer}>
+                <span className={styles.title}>{title}</span>
+                <span className={styles.subTitle}>/ {subTitle}</span>
             </div>
-            ${price}
+            <span className={styles.price}>
+                ${price}
+            </span>
         </div>
     )
 }
