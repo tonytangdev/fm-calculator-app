@@ -55,7 +55,7 @@ Use of CSS Grid for responsive design
 ## Author
 
 - Frontend Mentor - [@tonytangdev](https://www.frontendmentor.io/profile/tonytangdev)
-- Twitter - [@tonytangdev](https://twitter.com/TangTangdev)
+- Twitter - [@tonytangdev](https://twitter.com/TonyTangdev)
 
 
 ## Acknowledgments
